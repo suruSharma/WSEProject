@@ -1,0 +1,48 @@
+CREATE TABLE `seedsworld` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `link` varchar(200) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8 COMMENT='Seed links for database';
+
+CREATE TABLE `seedsindia` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `link` varchar(200) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8 COMMENT='Seed links for database';
+
+
+CREATE TABLE `recordsindia` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `url` text,
+  `docText` text,
+  `keyword` text,
+  `title` text,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=97 DEFAULT CHARSET=utf8;
+
+CREATE TABLE `recordsworld` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `url` text,
+  `docText` text,
+  `keyword` text,
+  `title` text,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=97 DEFAULT CHARSET=utf8;
+
+
+INSERT INTO seedsworld values (1, "http://www.foxnews.com/");
+INSERT INTO seedsworld values (2, "http://www.latimes.com/");
+INSERT INTO seedsworld values (3, "http://www.cbsnews.com/");
+INSERT INTO seedsworld values (4, "http://www.theguardian.com/");
+INSERT INTO seedsworld values (5, "http://www.dailymail.co.uk/");
+INSERT INTO seedsworld values (6, "http://www.euronews.com/");
+
+
+INSERT INTO seedsindia values (1, "http://www.deccanchronicle.com/");
+INSERT INTO seedsindia values (2, "http://zeenews.india.com/");
+INSERT INTO seedsindia values (3, "http://www.hindustantimes.com/");
+INSERT INTO seedsindia values (4, "http://www.dnaindia.com/");
+INSERT INTO seedsindia values (5, "http://indianexpress.com/");
+INSERT INTO seedsindia values (6, "http://www.firstpost.com/");
+INSERT INTO seedsindia values (7, "http://www.ndtv.com/");
+INSERT INTO seedsindia values (8, "http://www.thehindu.com/");

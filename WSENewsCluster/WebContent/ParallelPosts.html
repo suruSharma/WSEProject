@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<script
+	src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script
+	src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.1/jquery-ui.js"></script>
+<script
+	src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/app.js"></script>
+<link rel="stylesheet"
+	href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+<link href='http://fonts.googleapis.com/css?family=Noticia+Text:700'
+	rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Noto+Sans'
+	rel='stylesheet' type='text/css'>
+<link rel="stylesheet"
+	href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.1/themes/redmond/jquery-ui.css">
+<link href='css/styles.css' rel='stylesheet' type='text/css'>
+<link rel="icon" type="image/ico" href="images/news.ico">
+</head>
+<body>
+	<header class="site-header-wrap">
+		<div class="site-header">
+			<div class="site-logo" style="font-family: 'Noticia Text', serif;">
+				Web Search Engines (CSCI-GA.2580-001) <span> News Aggregator
+					: Using k-means Clustering <br>Saurabh Pujar (ssp437) ,
+					Suruchi Sharma (sss665)
+				</span>
+			</div>
+		</div>
+	</header>
+	<div id="parent"
+		style="padding-top: px; width: 850px !important; height: 400px !important;">
+		<div id="loadingImage" style="visibility: visible;"></div>
+		<div id="accordion"></div>
+	</div>
+	<div id="clusterCount"
+		style="padding-top: px; width: 200 !important; height: 400px !important;">
+		<table class="table" id="clusterCountTable" border="0">
+			<tr>
+				<td colspan="4" style="vertical-align: bottom;"><span
+					style="cursor: pointer"> <input
+						class="col-xs-2 form-control" style="width: 180px;"
+						placeholder="Cluster count (default 5)" type="text"
+						id="clusterCountVal"
+						title="Enter values between 1 and 20 (both inclusive)">
+						<button type="button" id="clusterCountButton"
+							class="btn btn-default btn-sm" style="margin-left: 20px;"
+							disabled="disabled" value="Submit">
+							<span class="glyphicon glyphicon-arrow-right"></span> Go!
+						</button>
+
+
+				</span> <label for="region" id="region"
+					style="margin-left: 500px; font-family: 'Noto Sans', sans-serif;">Region
+						: </label>
+					<button type="button" id="indiaButton" class="btn btn-primary"
+						style="margin-left: 20px;">India</button>
+					<button type="button" id="worldButton" class="btn btn-default"
+						style="margin-left: 50px;">World</button></td>
+			</tr>
+		</table>
+	</div>
+</body>
+</html>

@@ -1,0 +1,65 @@
+We had originally uploaded the project on linserv machines. In order to keep all the news links latest, we had a crawler that ran every three hours to gather latest news links. This was achieved using an object of the Timer class. But, we were informed by the CIMS support system that the NYU server does not have sufficient resources to run such a Java process. Hence, we had to present our project to the professor as a demo on our local servers. This was done on 4th May after we submitted the project.
+
+In this resubmission we have only updated the README file.
+
+The dynamic web project files are:
+Java Resources
+a. src
+1. com.wseproject.cluster
+	1. BagOfWords.java
+	2. Cluster.java
+	3. JsonCluster.java
+	4. JsonClusterSuper.java
+	5. KMeansCluster.java
+2. com.wseproject.crawler
+	1. Crawler.java
+3. com.wseproject.db
+	1. DatabaseUtils.java
+	2. Record.java
+4. com.wseproject.main
+	1. NewsAggregator.java
+	2. NewsCrawler.java
+	3. TimerServlet.java
+	4. WSEServlet.java
+5. com.wseproject.utils
+	1. Constants.java
+
+b. Libraries
+1. Apache Tomcat v8.0
+2. Web App Libraries
+3. JRE System Library
+4. EAR Libraries
+5. commons-math3-3.2.jar
+6. gson-2.3.1.jar
+7. jsoup-1.8.1.jar
+8. mysql-connector-java-5.1.35-bin.jar
+
+c. WebContent
+1. ParallelPosts.html
+2. js
+	1. app.js
+3. images
+	1. loading.gif
+	2. news.ico
+4. css
+	1. styles.css
+
+5. WEB-INF
+	1. lib
+	2. wb.xml
+
+
+Other files are automatically generated on creation of dynamic web application in eclipse. Other requirements
+1. MySQL database
+2. Apache tomcat server 
+
+In the database, execute the queries from the below file
+
+1. dB Queries.txt
+
+
+Below are the steps once the project is setup in eclipse
+
+1. Export the project as war
+2. Deploy on server 
+

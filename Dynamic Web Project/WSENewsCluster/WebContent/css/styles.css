@@ -1,0 +1,72 @@
+@CHARSET "ISO-8859-1";
+
+/* CSS class to style the front end */
+
+#parent {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+}
+
+.site-header-wrap {
+	margin-bottom: 0.5px;
+	margin-bottom: 0px;
+	padding: 45px 0px 0px;
+	position: relative;
+	border-bottom: 1px solid #79B7E7;
+	background: #FCFDFD;
+}
+
+.site-header {
+	width: 100%;
+	text-align: center;
+}
+
+.site-logo {
+	text-decoration: none;
+	font-size: 3.000em;
+	color: #E17009;
+	line-height: 100%;
+}
+
+.site-logo span {
+	display: block;
+	font-size: 0.500em;
+}
+
+input.invalid {
+	border: 2px solid red;
+}
+
+input.valid {
+	border: 2px solid green;
+}
+
+a:link {
+    color: #00007A;
+    font-weight:bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+#accordion > h3 {
+	margin-top: 15px;
+}
+
+#accordion > h3:first-child {
+	margin-top: 0;
+}
+
+#loadingImage
+{
+	background:url(../images/loading.gif) no-repeat center center;
+	height: 75px;
+   	width: 75px;
+	position: absolute;
+	padding: 100px 700px 100px 100px;
+}

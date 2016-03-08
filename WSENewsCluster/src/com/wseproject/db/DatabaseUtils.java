@@ -21,7 +21,7 @@ public class DatabaseUtils {
 			conn = DriverManager.getConnection(url, "root", "root");
 
 			//String url = "jdbc:mysql://warehouse.cims.nyu.edu:3306/sss665_crawler";
-			//conn = DriverManager.getConnection(url, "sss665", "3acfj98w");
+			//conn = DriverManager.getConnection(url, "sss665", "<password>");
 
 		} catch (SQLException e) {
 			e.printStackTrace();
